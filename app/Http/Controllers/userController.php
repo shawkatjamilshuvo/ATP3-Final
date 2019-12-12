@@ -18,6 +18,13 @@ class userController extends Controller
     }
     public function adminprofile(Request $req)
     {
-        
+        $users = DB::table('users')->select('UserID','Email','Password','User_Type')->get();
+        return view('adminprofile', compact('users'));
+    }
+    public function adminpro(Request $req)
+    {
+        $user = DB::table('users')->select('UserID','Email','Password','User_Type')->where('UserID', 'Shuvo1')->first();
+        //echo $user->name;
+        return view('adminpro', compact('users'));
     }
 }

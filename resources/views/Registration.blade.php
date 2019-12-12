@@ -28,7 +28,7 @@
                  {{ csrf_field() }}
                 <div class="form-label-group">
                 <label for="inputName">UserID</label>
-                  <input type="text" id="inputName" name="userid" class="form-control" placeholder="UserID" autofocus>
+                  <input type="text" id="inputName" name="userid" class="form-control" placeholder="UserID" autofocus required>
                   
  
                   @if ($errors->has('name'))
@@ -38,7 +38,7 @@
                 </div> 
                 <div class="form-label-group">
                 <label for="inputEmail">Email address</label>
-                  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" >
+                  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required>
                                                                                                                                                                            
  
                   @if ($errors->has('email'))
@@ -48,11 +48,11 @@
  
                 <div class="form-label-group">
                 <label for="inputPassword">Password</label>
-                  <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password">
+                  <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
                   
                   <div class="form-label-group">
                 <label for="inputPassword">User Type</label>
-                  <input type="text" name="userType" id="inputPassword" class="form-control" placeholder="Type must be ADMIN or MEMBER">
+                  <input type="text" name="userType" id="inputPassword" class="form-control" placeholder="Type must be ADMIN or MEMBER" required>
 
 
                   @if ($errors->has('password'))

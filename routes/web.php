@@ -21,3 +21,4 @@ Route::post('registration','registration@signup');
 Route::get('adminpage','userController@admin');
 Route::get('memberpage','userController@member');
 Route::get('admininfo','userController@adminprofile');
+Route::get('adminpro','userController@adminpro');

@@ -43,11 +43,11 @@
     {{ csrf_field() }}
     <div class="form-group">
      <label>Enter UserID</label>
-     <input type="text" name="userID" class="form-control" />
+     <input type="text" name="userID" class="form-control"  required/>
     </div>
     <div class="form-group">
      <label>Enter Password</label>
-     <input type="password" name="password" class="form-control" />
+     <input type="password" name="password" class="form-control" required />
     </div>
     <div class="form-group">
      <input type="submit" name="login" class="btn btn-primary" value="Login" />
